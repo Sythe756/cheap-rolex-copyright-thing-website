@@ -1,0 +1,345 @@
+
+:root {
+  --body_colour: #f4f4f4;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--body_colour);
+}
+
+/* navbar */
+
+nav {
+  border-bottom: 3px solid gray;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  background-color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#container-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 25%;
+}
+
+#logo > img {
+  width: 200px;
+  height: 50px;
+  padding-left: 100px;
+}
+
+.menu {
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu > ul {
+  width: 610px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+  font-size: 14px;
+  padding-top: 25px;
+}
+
+#menu-links > li > a {
+  text-decoration: none;
+  color: rgba(157, 157, 157, 0.856);
+  cursor: pointer;
+}
+
+#menu-links > li > a:hover {
+  color: white;
+}
+
+.icons {
+  width: 15%;
+  padding-right: 10px;
+}
+
+.icons > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style-type: none;
+}
+
+i {
+  font-size: 18px;
+  padding-top: 16px;
+  color: rgba(157, 157, 157, 0.856);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+i:hover {
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* first section */
+
+.container1 {
+  background-color: black;
+  color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product-columns {
+  height: 100vh;
+  width:30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#product-name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  width: 50%;
+}
+
+#product-name > p {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  line-height: 34px;
+  width: 110%;
+}
+
+
+.add-to-cart {
+  width: 45%;
+  padding: 3px;
+  background-color: black;
+  border: 1px solid gray;
+  border-radius: 1px;
+  color: gray;
+  font-weight: 500;
+}
+
+.add-to-cart:hover {
+  color: white;
+}
+
+
+#product-description {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+#watch-icon > img {
+  width:75px;
+  height:120px;
+  color:black;
+
+}
+
+#product-description > p {
+  padding: 20px 0px;
+  font-size: 14px;
+  font-weight: thin;
+  width: 78%;
+}
+
+.learn-more {
+  text-decoration: none;
+  color: gray;
+  font-size: 18;
+  font-weight:600;
+  width:7em;
+}
+
+.learn-more:hover{
+  color:white;
+}
+
+
+/* section 2 */
+
+#conatiner2 {
+  height: 100vh;
+  width:100%;
+}
+
+video {
+  height:100vh;
+  width:100%;
+  display: block;
+  object-fit: fill;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 975px) and (min-width:768px){
+  nav {
+    border-bottom: 3px solid gray;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  .navbar {
+    padding: 1rem 2rem;
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #container-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #logo {
+    width: 25%;
+  }
+  
+  #logo > img {
+    width: 200px;
+    height: 50px;
+    padding-left: 100px;
+  }
+  
+  .menu {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu > ul {
+    width: 400px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    font-size: 14px;
+    padding-top: 25px;
+  }
+  
+
+  .hamburger {
+    display: block;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .icons.active {
+    display: flex;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  #container-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu > ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .icons.active {
+    display: flex;
+  }
+}
