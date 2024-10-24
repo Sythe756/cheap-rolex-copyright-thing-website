@@ -212,7 +212,7 @@ i:hover {
   /* Sidebar Menu (for sliding) */
   .menu {
     width: 0;
-    height: 100vh;
+    height: 100%;
     background-color: #111;
     position: fixed;
     top: 0;
