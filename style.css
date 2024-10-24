@@ -35,6 +35,7 @@ nav {
   padding: 1rem;
   background-color: var(--navbar-bg-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 #container-nav {
@@ -59,7 +60,7 @@ nav {
 }
 
 .menu {
-  flex: 3;
+  flex: 1;
   display: flex;
   justify-content: flex-end;
 }
